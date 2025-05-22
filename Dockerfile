@@ -1,4 +1,4 @@
-FROM public.ecr.aws/amazoncorretto/amazoncorretto::17
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:17
 RUN apk add curl
 VOLUME /tmp
 EXPOSE 8080
