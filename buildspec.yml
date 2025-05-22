@@ -9,8 +9,8 @@ phases:
       - # Replace with this to your repository URI
       - REPOSITORY_URI=844720368598.dkr.ecr.us-east-1.amazonaws.com/spring-demo-ecr
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
-      - echo Logging in to Docker Hub...
-      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      #- echo Logging in to Docker Hub...
+      #- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   build:
     commands:
       - echo Build started on `date`
