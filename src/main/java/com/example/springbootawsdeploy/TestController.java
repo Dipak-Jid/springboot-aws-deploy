@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/data")
     public String getData() {
-        return "First message from AWS Ecs";
+        return "Message from AWS ECS - V1";
     }
 
     @GetMapping("/message")
